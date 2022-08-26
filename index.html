@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Admin</title>
+
+	<!-- ==== BOOTSTRAP CSS FILE LINK ==== -->
+	<link rel="stylesheet" href="assets/vendor/bootstrap/css/bootstrap.css">
+
+	<!-- ==== FONTAWESOME ICON CSS LINK ==== -->
+	<link rel="stylesheet" href="assets/vendor/fontawesome/css/all.css">
+	<link rel="stylesheet" href="assets/vendor/font-awesome/css/font-awesome.min.css">
+
+	<!-- ==== CUSTOM CSS FILE LINK ==== -->
+	<link rel="stylesheet" href="assets/css/style.css">
+
+</head>
+<body>
+	<div class="wrapper">
+		<div class="main-content">
+				<!-- ====== SIDE BAR SECTION START ===== -->
+					<div class="side-bar">
+						<div class="sidebar-close">
+							<span > <i class="fa fa-angle-left"></i></span>
+						</div>
+						<div class="logo-section">
+							<a href=""><h1>Admin</h1></a>
+						</div>
+						<div class="sidebar-content">
+							<div class="search-section">
+								<form>
+									<div class="form-group d-flex">
+										 <input type="text" class="form-control">
+										 <button><i class="fa fa-search"></i></button>
+									</div>
+								</form>
+							</div>
+							<div class="sidebar-navigation navbar p-0">
+								<ul class="navbar-nav " id="side-nav">
+									<li class="nav-item"><a class="nav-link active" href="index.html"><i class="fas fa-tachometer-alt mr-2"></i> DashBoard</a></li>
+
+									<li class="nav-item dropdown" >
+
+										<a class="nav-link " data-toggle="dropdown"  href=""><i class="fa fa-fort-awesome mr-2"></i> Schools/Collages <i class="fa fa-angle-left angle"></i></a>
+
+										<div class="dropdown-menu">
+											<a href="school.html"><i class="fa fa-circle-o"></i> List of School</a>
+											<a href="addcollage.html"><i class="fa fa-circle-o"></i> Add School</a>
+											<a href="school.html"><i class="fa fa-circle-o"></i> List of Collages</a>
+											<a href="addcollage.html"><i class="fa fa-circle-o"></i> Add Collage</a>
+											<a href="school.html"><i class="fa fa-circle-o"></i> List of University</a>
+											<a href="addcollage.html"><i class="fa fa-circle-o"></i> Add University</a>
+										</div>
+
+									</li>
+
+									<li class="nav-item dropdown" >
+										<a class="nav-link" data-toggle="dropdown" href=""><i class="fa fa-certificate mr-2"></i> Certificate <i class="fa fa-angle-left angle"></i></a>
+
+										<div class="dropdown-menu">
+											<a href="listofcertificate.html"><i class="fa fa-circle-o"></i> List of Certificate</a>
+											<a href=""><i class="fa fa-circle-o"></i> Generate Certificate</a>
+											
+										</div>
+
+									</li>
+
+									<li class="nav-item dropdown" >
+										<a class="nav-link" data-toggle="dropdown" href=""><i class="fa fa-calendar mr-2"></i> Students <i class="fa fa-angle-left angle"></i></a>
+
+										<div class="dropdown-menu">
+											<a href="studentlist.html"><i class="fa fa-circle-o"></i> List of Student</a>
+											<a href="studentform.html"><i class="fa fa-circle-o"></i> Student Form</a>
+											
+										</div>
+
+									</li>
+
+									<li class="nav-item"><a class="nav-link" href="listofcertificate.html"><i class="fa fa-certificate mr-2"></i> Claimed Certificate</a></li>
+									<li class="nav-item"><a class="nav-link" href=""><i class="fa fa-address-card mr-2"></i> Activity</a></li>
+									<li class="nav-item"><a class="nav-link" href="help.html"><i class="fa fa-handshake-o mr-2"></i> Help & Support</a></li>
+									<li class="nav-item"><a class="nav-link red" href=""><i class="fa fa-power-off mr-2 text-light"></i> Logout</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>	
+				<!-- ====== SIDE BAR SECTION END ===== -->
+
+				<!-- ====== CONTENT SECTION START ===== -->
+
+				<div class="content ">
+					<!-- ===== TOP NAV BAR SECTON START ==== -->
+					<div class="top-bar navbar navbar-expand-md navbar-light">
+						<div class="sideBar-toggler">
+							<div></div>
+							<div></div>
+							<div></div>
+						</div>
+
+						<button class="navbar-toggler" data-target="#my-nav" data-toggle="collapse">
+							<span class="navbar-toggler-icon"></span>
+						</button>
+
+						<div class="top-nav  w-100 collapse navbar-collapse" id="my-nav" >
+							<ul class="navbar-nav list-unstyled">
+								<li class="nav-item"><a class="nav-link" href="">Home</a></li>
+								<li class="nav-item"><a class="nav-link" href="">School</a></li>
+								<li class="nav-item"><a class="nav-link" href="">List of Schools</a></li>
+								<li class="nav-item"><a class="nav-link" href="">List of Collages</a></li>
+								<li class="nav-item"><a class="nav-link" href="">List of University</a></li>
+							</ul>
+							
+						</div>
+
+						
+					</div>
+					<!-- ===== TOP NAV BAR SECTON END ==== -->
+
+					<!-- ===== DASHBOARD CONTENT SECTION START  ==== -->
+					<div class="container-fluid d-flex dashboard-container">
+						<div class="dashboard-header">
+							<h1>Dashboard</h1>
+						</div>
+						<div class="dash-bread  ml-auto">
+							<ul class="breadcrumb" style="">
+								<li class="breadcrumb-item"><a href="">Home</a></li>
+								<li class="breadcrumb-item">Dashboard</li>
+							</ul>
+						</div>
+					</div>
+
+					<div class="row dash-box-container ">
+						<div class=" col-sm-6 col-md-4">
+							<div class="card-body box box-red">
+								<div class="box-content">
+									<h2>6</h2>
+									<p>School</p>
+									<div class="box-icon">
+										 <i class="fa fa-pie-chart"></i>
+									</div>
+
+								</div>
+								<div class="box-btn box-darkred">
+									<a href="">More Info <i class="fa fa-arrow-right"></i></a>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-sm-6 col-md-4">
+							<div class="card-body box box-red">
+								<div class="box-content">
+									<h2>6</h2>
+									<p>School</p>
+									<div class="box-icon">
+										 <i class="fa fa-pie-chart"></i>
+									</div>
+
+								</div>
+								<div class="box-btn  box-darkred">
+									<a href="">More Info <i class="fa fa-arrow-right"></i></a>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-sm-6 col-md-4">
+							<div class="card-body box box-red">
+								<div class="box-content">
+									<h2>6</h2>
+									<p>School</p>
+									<div class="box-icon">
+										 <i class="fa fa-pie-chart"></i>
+									</div>
+
+								</div>
+								<div class="box-btn  box-darkred">
+									<a href="">More Info <i class="fa fa-arrow-right"></i></a>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-sm-6 col-md-4">
+							<div class="card-body box box-green">
+								<div class="box-content">
+									<h2>6</h2>
+									<p>School</p>
+									<div class="box-icon">
+										 <i class="fa fa-bar-chart "></i>
+									</div>
+
+								</div>
+								<div class="box-btn box-darkgreen">
+									<a href="">More Info <i class="fa fa-arrow-right"></i></a>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-sm-6 col-md-4">
+							<div class="card-body box box-yellow">
+								<div class="box-content">
+									<h2>6</h2>
+									<p>School</p>
+									<div class="box-icon">
+										 <i class="fa fa-user-plus"></i>
+									</div>
+
+								</div>
+								<div class="box-btn  box-deepyellow">
+									<a href="">More Info <i class="fa fa-arrow-right"></i></a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- ===== DASHBOARD CONTENT SECTION END  ==== -->
+
+
+				</div>
+				<!-- ====== CONTENT SECTION END ===== -->
+					<!-- ===== FOOTER SECTION START  ==== -->
+					<div class="footer-section">
+						<div class="footer-content">
+							<p><b>Copyright &copy; 2021 <span><a href="">University Management System</a></span>.</b> All rigths reserved.</p>
+						</div>
+					</div>
+					<!-- ===== FOOTER SECTION END  ==== -->
+			</div>
+
+		</div>
+
+	<!-- ====== JS FILE LINK HERE ====== -->
+
+	<!-- ==== JQUERY JS FILE LINK ==== -->
+	<script src="assets/vendor/bootstrap/js/jquery.js"></script>
+
+	<!-- ==== BOOTSTRAP JS FILE LINK HERE ==== -->
+	<script src="assets/vendor/bootstrap/js/bootstrap.js"></script>
+	<!-- === CUSTOM JS FILE LINK -->
+	<script src="assets/js/app.js"></script>
+</body>
+</html>

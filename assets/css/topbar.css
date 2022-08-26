@@ -1,0 +1,23 @@
+.top-nav .navbar-right  li a i{
+	position: relative;
+	font-size: 20px;
+}
+.top-nav .navbar-right li a i span{
+	/*width: 10px;
+	height: 10px;*/
+	padding: 2px 4px;
+	border-radius: 2px;
+	color: #fff;
+	/*background: red;*/
+	font-size: 12px;
+	position: absolute;
+	top: -4px;
+	right: -4px;
+
+}
+
+@media screen and (max-width: 767px){
+.top-nav ul li {
+	margin: 10px 0 !important;
+}
+}

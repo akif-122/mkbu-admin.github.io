@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Admin</title>
+
+	<!-- ==== BOOTSTRAP CSS FILE LINK ==== -->
+	<link rel="stylesheet" href="assets/vendor/bootstrap/css/bootstrap.css">
+
+	<!-- ==== FONTAWESOME ICON CSS LINK ==== -->
+	<link rel="stylesheet" href="assets/vendor/fontawesome/css/all.css">
+	<link rel="stylesheet" href="assets/vendor/font-awesome/css/font-awesome.min.css">
+
+	<!-- ==== CUSTOM CSS FILE LINK ==== -->
+	<link rel="stylesheet" href="assets/css/style.css">
+	<link rel="stylesheet" href="assets/css/certificate.css">
+
+	<style type="text/css">
+		#custom-btn{
+			background: transparent !important;
+			box-shadow: none !important; 
+		}
+	</style>
+</head>
+<body>
+	<div class="wrapper">
+		<div class="main-content">
+				
+
+				<!-- ====== CONTENT SECTION START ===== -->
+
+				<div class="content ">
+					
+
+					<!-- ===== CERTIFICATE SECTION START  ==== -->
+					<div class="container-fluid crt-section px-0 px-sm-5 ">
+
+						<div class="cert-container">
+							<div class="certificate-container">
+								<div class="certificate">
+									
+         							<span onclick="defaultBtnActive()" id="custom-btn"  >
+										<div class="certificate-img">
+											<img src="assets/img/awards.png" alt="">
+										</div>
+									</span>
+							         <input id="default-btn" type="file" hidden>
+
+
+									<div class="cert-heading text-center">
+										<h4>Venngage Student Startup</h4>
+										<h1>SCHOLARSHIP</h1>
+									</div>
+
+
+									<div class="cert-content text-center">
+										<p>This award presented to</p>
+										<h2>Angela T. Oliver</h2>
+										<p>in recognition of your exception business pitch and beautiful infographic design.</p>
+									</div>
+
+									<div class="student-cert-detail  mx-auto">
+
+										<div class="d-flex justify-content-between align-items-center my-5 rb-btm">
+
+											<div class="strm d-flex align-items-center w-50">
+												<h4>Stream: </h4> <span>Stream 1</span>
+											</div>
+
+
+											<div class="d-flex align-items-center w-25">
+												<h4>Date of birth: </h4><span >01-09-2020</span>
+											</div>
+
+											<div class="gender d-flex align-items-center ">
+												<h4>Gender: </h4><span>Male</span>
+											</div>
+											
+										</div>
+
+										<div class="d-flex justify-content-between align-items-center my-5 rb-btm">
+
+											<div class="d-flex align-items-center">
+												<h4>Email: </h4> <span>abc@gmail.com</span>
+											</div>
+
+											
+
+											<div class="d-flex align-items-center w-50">
+												<h4>Phone: </h4> <span>02782367734</span>
+											</div>
+											
+										</div>
+
+										<div class=" my-5 rb-btm">
+											<div class="d-flex align-items-center">
+												<h4>Address: </h4> <span>KP, Pakistan</span>
+											</div>
+										</div>
+
+									</div>
+
+									<div class="cert-footer  d-flex justify-content-between flex-column flex-sm-row">
+										<div class="left-section my-3">
+											<h5>Eugene Woo <br /> CEO of Venngage</h5>
+										</div>
+
+										<div class="right-section my-3">
+											<h4>VENNGAGE</h4>
+											<span>December, 2018</span>
+										</div>
+									</div>
+
+
+
+								</div>
+							</div>
+						</div>
+
+					</div>
+				
+					<!-- ===== CERTIFICATE SECTION END  ==== -->
+
+
+				</div>
+				<!-- ====== CONTENT SECTION END ===== -->
+					<!-- ===== FOOTER SECTION START  ==== -->
+					
+					<!-- ===== FOOTER SECTION END  ==== -->
+			</div>
+
+		</div>
+
+	<!-- ====== JS FILE LINK HERE ====== -->
+
+	<!-- ==== JQUERY JS FILE LINK ==== -->
+	<script src="assets/vendor/bootstrap/js/jquery.js"></script>
+
+	<!-- ==== BOOTSTRAP JS FILE LINK HERE ==== -->
+	<script src="assets/vendor/bootstrap/js/bootstrap.js"></script>
+	<!-- === CUSTOM JS FILE LINK -->
+	<!-- <script src="assets/js/app.js"></script> -->
+
+	 <script>
+         const defaultBtn = document.querySelector("#default-btn");
+       
+         const customBtn = document.querySelector("#custom-btn");
+         const cancelBtn = document.querySelector("#cancel-btn i");
+         const img = document.querySelector("img");
+         let regExp = /[0-9a-zA-Z\^\&\'\@\{\}\[\]\,\$\=\!\-\#\(\)\.\%\+\~\_ ]+$/;
+         function defaultBtnActive(){
+           defaultBtn.click();
+         }
+         defaultBtn.addEventListener("change", function(){
+           const file = this.files[0];
+           if(file){
+             const reader = new FileReader();
+             reader.onload = function(){
+               const result = reader.result;
+               img.src = result;
+             }
+            
+             reader.readAsDataURL(file);
+           }
+           if(this.value){
+             let valueStore = this.value.match(regExp);
+           }
+         });
+      </script>
+
+</body>
+</html>

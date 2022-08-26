@@ -1,0 +1,50 @@
+.logo-section{
+	padding: 10px 20px;
+}
+.logo-section h1{
+	font-size: 28px;
+	color: #333;
+}
+.help-content-box{
+	border-radius: 5px;
+}
+.br-top{
+	border-top: 3px solid #007aff;
+
+}
+.help-content-box .card-header{
+	background: #fff;
+}
+.help-content-box .card-header h4{
+	font-size: 17px;
+	color: #444;
+}
+.help-content-box .card-body .collage,
+.help-content-box .card-body .location,
+.help-content-box .card-body .contact,
+.help-content-box .card-body .address{
+	margin: 20px 0;
+	padding: 0px 0;
+}
+.help-content-box .card-body .contact{
+	border-top: 1px solid lightgrey;
+	border-bottom: 1px solid lightgrey;
+	padding: 15px 0;
+}
+.help-content-box .card-body h4{
+	font-size: 16px;
+}
+.help-content-box .card-body p{
+	font-size: 15px;
+	font-weight: 400;
+	color: grey;
+
+
+}
+
+.help-content-box .card-body ol{
+	padding-left: 30px;
+}
+.help-content-box .card-body ol li{
+	font-size: 17px;
+}

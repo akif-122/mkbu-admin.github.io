@@ -1,0 +1,31 @@
+.enroll-form form  label{
+	font-size: 15px !important;
+	font-weight: 500;
+	margin-top: 5px;
+}
+.enroll-form form select,
+.enroll-form form input{
+	margin-bottom: 15px;
+	height: 40px;
+	font-size: 16px;
+	border-radius: 5px;
+
+}
+.enroll-form form textarea{
+	font-size: 16px;
+	margin-bottom: 15px;
+	border-radius: 5px;
+
+}
+.enroll-form form .enroll-btns{
+	margin: 10px 0;
+
+
+}
+.enroll-form form .enroll-btns button{
+	border: 1px solid lightgrey;
+	border-radius: 5px;
+	font-size: 15px;
+	padding: 8px 16px
+}
+

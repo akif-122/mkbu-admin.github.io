@@ -1,0 +1,154 @@
+.scholl-section{
+	padding: 10px;
+
+}
+
+.school-container{
+	padding: 10px 20px;
+	border-radius: 5px;
+	border: 1px solid lightgrey;
+	background: #fff;
+	
+}
+.school-container .school-header p{
+	font-size: 17px;
+	font-weight: bold;
+	color: #444;
+	margin: 0;
+}
+
+.school-list-container{
+	padding: 20px;
+	border-radius: 5px;
+	border: 1px solid lightgrey;
+	background: #fff;
+}
+.school-list-container .student label{
+	font-size: 14px;
+	font-weight: 500;
+}
+.school-list-container .student input{
+	height: 30px;
+	padding: 0 5px;
+	border: 1px solid lightgrey;
+	border-radius: 4px;
+	font-size: 14px;
+}
+.school-list-container .student .entry-sec input{
+	width: 60px;
+	
+}
+.school-list-container .student .entry-sec  span{
+	font-size: 13px;
+	color: grey;
+}
+
+/*========== TABLE SECTION START ==========*/
+.table-container{
+	margin-top: 20px;
+	border: 1px solid lightgrey;
+	border-radius: 4px;
+
+}
+
+.table-container table{
+	width: 100%;
+
+}
+.table-container table thead tr th{
+	padding: 10px;
+	border: 1px solid lightgrey;
+	
+
+}
+.table-container table thead tr th .table-header-text {
+	display: flex;
+	align-items: center;
+	flex-wrap: nowrap;
+}
+.table-container table thead tr th .table-header-text p{
+	margin: 0;
+	margin-right: auto;
+	font-size: 14px;
+
+}
+.table-container table thead tr th .table-header-text i{
+	font-size: 12px;
+}
+.table-container table tbody tr td{
+	padding: 10px;
+	font-size: 13px;
+	font-weight: 500;
+	border: 1px solid lightgrey;
+
+}
+.table-container table thead tr th:first-child,
+.table-container table tbody tr td:first-child{
+	border-left: none;
+}
+.table-container table thead tr th:last-child,
+.table-container table tbody tr td:last-child{
+	border-right: none;
+}
+
+
+.table-pagination{
+	margin: 20px 0;
+}
+.table-pagination ul li a{
+	font-size: 15px;
+	color: grey;
+	padding: 8px 13px;
+}
+/*========== TABLE SECTION END ==========*/
+
+
+@media screen and (max-width: 767px){
+.table-container{
+	overflow-x: scroll;
+}
+.table-container table thead tr th .table-header-text p{
+	font-size: 12px;
+
+}
+.table-container table thead tr th .table-header-text i{
+	font-size: 10px;
+}
+.table-container table tbody tr td{
+	font-size: 11px;
+
+
+
+}	
+}
+
+@media screen and (max-width: 575px){
+	.school-list-container{
+	padding: 5px;
+}
+.table-container{
+	overflow-x: scroll;
+
+}
+.table-container table{
+	min-width: 400px;
+}
+.table-container table thead tr th {
+	padding-left: 2px;
+}
+.table-container table thead tr th .table-header-text p{
+	font-size: 10px;
+
+}
+.table-container table thead tr th .table-header-text i{
+	font-size: 8px;
+}
+.table-container table tbody tr td{
+	font-size: 9px;
+	padding-left: 2px;
+	/*display: inline-block;*/
+}
+.table-pagination ul li a{
+	font-size: 12px;
+}
+}

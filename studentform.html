@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>School</title>
+
+	<!-- ==== BOOTSTRAP CSS FILE LINK ==== -->
+	<link rel="stylesheet" href="assets/vendor/bootstrap/css/bootstrap.css">
+
+	<!-- ==== FONTAWESOME ICON CSS LINK ==== -->
+	<link rel="stylesheet" type="text/css" href="assets/vendor/fontawesome/css/all.css">
+	<link rel="stylesheet" href="assets/vendor/font-awesome/css/font-awesome.min.css">
+	
+
+	<!-- ==== CUSTOM CSS FILE LINK ==== -->
+	<link rel="stylesheet" href="assets/css/style.css">
+	<link rel="stylesheet" href="assets/css/school.css">
+	<link rel="stylesheet" href="assets/css/topbar.css">
+	<link rel="stylesheet" href="assets/css/studentenroll.css">
+
+</head>
+<body>
+	<div class="wrapper">
+		<div class="main-content">
+				<!-- ====== SIDE BAR SECTION START ===== -->
+					<div class="side-bar">
+						<div class="sidebar-close">
+							<span > <i class="fa fa-angle-left"></i></span>
+						</div>
+						<div class="logo-section">
+							<a href=""><h1>Admin</h1></a>
+						</div>
+						<div class="sidebar-content">
+							<div class="search-section">
+								<form>
+									<div class="form-group d-flex">
+										 <input type="text" class="form-control">
+										 <button><i class="fa fa-search"></i></button>
+									</div>
+								</form>
+							</div>
+							<div class="sidebar-navigation navbar p-0">
+								<ul class="navbar-nav " id="side-nav">
+									<li class="nav-item"><a class="nav-link active" href="index.html"><i class="fas fa-tachometer-alt mr-2"></i> DashBoard</a></li>
+
+									<li class="nav-item dropdown" >
+
+										<a class="nav-link " data-toggle="dropdown"  href=""><i class="fa fa-fort-awesome mr-2"></i> Schools/Collages <i class="fa fa-angle-left angle"></i></a>
+
+										<div class="dropdown-menu">
+											<a href="school.html"><i class="fa fa-circle-o"></i> List of School</a>
+											<a href="addcollage.html"><i class="fa fa-circle-o"></i> Add School</a>
+											<a href="school.html"><i class="fa fa-circle-o"></i> List of Collages</a>
+											<a href="addcollage.html"><i class="fa fa-circle-o"></i> Add Collage</a>
+											<a href="school.html"><i class="fa fa-circle-o"></i> List of University</a>
+											<a href="addcollage.html"><i class="fa fa-circle-o"></i> Add University</a>
+										</div>
+
+									</li>
+
+									<li class="nav-item dropdown" >
+										<a class="nav-link" data-toggle="dropdown" href=""><i class="fa fa-certificate mr-2"></i> Certificate <i class="fa fa-angle-left angle"></i></a>
+
+										<div class="dropdown-menu">
+											<a href="listofcertificate.html"><i class="fa fa-circle-o"></i> List of Certificate</a>
+											<a href=""><i class="fa fa-circle-o"></i> Generate Certificate</a>
+											
+										</div>
+
+									</li>
+
+									<li class="nav-item dropdown" >
+										<a class="nav-link" data-toggle="dropdown" href=""><i class="fa fa-calendar mr-2"></i> Students <i class="fa fa-angle-left angle"></i></a>
+
+										<div class="dropdown-menu">
+											<a href="studentlist.html"><i class="fa fa-circle-o"></i> List of Student</a>
+											<a href="studentform.html"><i class="fa fa-circle-o"></i> Student Form</a>
+											
+										</div>
+
+									</li>
+
+									<li class="nav-item"><a class="nav-link" href="listofcertificate.html"><i class="fa fa-certificate mr-2"></i> Claimed Certificate</a></li>
+									<li class="nav-item"><a class="nav-link" href=""><i class="fa fa-address-card mr-2"></i> Activity</a></li>
+									<li class="nav-item"><a class="nav-link" href="help.html"><i class="fa fa-handshake-o mr-2"></i> Help & Support</a></li>
+									<li class="nav-item"><a class="nav-link red" href=""><i class="fa fa-power-off mr-2 text-light"></i> Logout</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>	
+				<!-- ====== SIDE BAR SECTION END ===== -->
+
+				<!-- ====== CONTENT SECTION START ===== -->
+
+				<div class="content ">
+					<!-- ===== TOP NAV BAR SECTON START ==== -->
+					<div class="top-bar navbar navbar-expand-md navbar-light">
+						<div class="sideBar-toggler">
+							<div></div>
+							<div></div>
+							<div></div>
+						</div>
+
+						<button class="navbar-toggler" data-target="#my-nav" data-toggle="collapse">
+							<span class="navbar-toggler-icon"></span>
+						</button>
+
+						<div class="top-nav  w-100 collapse navbar-collapse" id="my-nav" >
+							<ul class="navbar-nav list-unstyled ">
+								<li><a href="">Home</a></li>
+								<li><a href="">Contact</a></li>
+							</ul>
+
+							<ul class="ml-auto list-unstyled navbar-nav navbar-right">
+								<li><a href=""><i class="fa fa-search"></i></a></li>
+								<li><a href=""><i class="far fa-comments"><span class="box-red text-light">2</span></i></a></li>
+								<li><a href=""><i class="far fa-bell"><span class="box-yellow text-dark">2</span></i></a></li>
+								<li><a href=""><i class="fas fa-expand-arrows-alt"></i></a></li>
+								<li><a href=""><i class="fa fa-th-large"></i></a></li>
+							</ul>
+						</div>
+					</div>
+					<!-- ===== TOP NAV BAR SECTON END ==== -->
+
+					<!-- ===== SCHOOL CONTENT SECTION START  ==== -->
+					<div class="scholl-section">
+						<div class="container-fluid  d-flex school-container">
+							<div class="school-header">
+								<p>Student Enrolled Form</p>
+							</div>
+						</div>
+
+						<div class=" school-list-container enroll-form">
+
+							<form>
+								<div class="row">
+									<div class="col-sm-6">
+										<div class="form-group">
+											<label>Student Name</label>
+											<input type="text" name="" class="form-control" placeholder="Student First Name *">
+											<input type="text" name="" class="form-control" placeholder="Student Middle Name">
+											<input type="text" name="" class="form-control" placeholder="Student Last Name *">
+										</div>
+
+										<div class="form-group">
+											<label>Email</label>
+											<input type="Email" name="" class="form-control" placeholder="Student Email *">
+										</div>
+
+										<div class="form-group">
+											<label>Phone</label>
+											<input type="Email" name="" class="form-control" placeholder="Student Phone Number *">
+										</div>
+
+										<div class="form-group">
+											<label>Address</label>
+											<textarea name="" id="" rows="3" class="form-control" placeholder="Student Address"></textarea>
+										</div>
+
+									</div>
+
+									<div class="col-sm-6">
+
+										<div class="form-group">
+											<label>Steaming</label>
+											<select class="form-control">
+												<option>Select Steam</option>
+											</select>
+										</div>
+
+										<div class="form-group">
+											<label>Date of Birth</label>
+											<input type="date" name="" class="form-control" >
+										</div>
+
+										<div class="form-group">
+											<label>Gender</label>
+											<select class="form-control">
+												<option>Select Gender</option>
+												<option>Male</option>
+												<option>Female</option>
+											</select>
+										</div>
+
+										<div class="form-group">
+											<label>Collage</label>
+											<select class="form-control">
+												<option>Select Collage</option>
+												<option>MKBU</option>
+											</select>
+										</div>
+
+									</div>
+
+									
+
+									
+								</div>
+
+								<div class="enroll-btns text-center text-sm-left">
+									<button class="btn btn-danger">Cancel</button>
+									<button class="btn btn-light">Reset</button>
+									<button class="btn btn-success">Submit</button>
+								</div>
+							</form>
+
+						</div>
+					<!-- ===== SCHOOL CONTENT SECTION END  ==== -->
+
+
+				</div>
+				<!-- ====== CONTENT SECTION END ===== -->
+					<!-- ===== FOOTER SECTION START  ==== -->
+					<div class="footer-section">
+						<div class="footer-content">
+							<p><b>Copyright &copy; 2021 <span><a href="">University Management System</a></span>.</b> All rigths reserved.</p>
+						</div>
+					</div>
+					<!-- ===== FOOTER SECTION END  ==== -->
+			</div>
+
+		</div>
+
+	<!-- ====== JS FILE LINK HERE ====== -->
+
+	<!-- ==== JQUERY JS FILE LINK ==== -->
+	<script src="assets/vendor/bootstrap/js/jquery.js"></script>
+
+	<!-- ==== BOOTSTRAP JS FILE LINK HERE ==== -->
+	<script src="assets/vendor/bootstrap/js/bootstrap.js"></script>
+	<!-- === CUSTOM JS FILE LINK -->
+	<script src="assets/js/app.js"></script>
+</body>
+</html>
